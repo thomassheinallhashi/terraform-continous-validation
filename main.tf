@@ -6,8 +6,8 @@ provider "aws" {
 }
 
 provider "hcp" {
-    client_id = zyKs4ZUF0VCIgRCgOPYnbeTbY6bbrWcZ 
-    client_secret = JkoCqFO4tizXPYDYXH2wdsu4YJ5Wq_kT02zPiwHtZbvGy0bBWg6niO6YjxldHe-W    
+    client_id = "zyKs4ZUF0VCIgRCgOPYnbeTbY6bbrWcZ" 
+    client_secret = "JkoCqFO4tizXPYDYXH2wdsu4YJ5Wq_kT02zPiwHtZbvGy0bBWg6niO6YjxldHe-W"    
 }
 data "hcp_packer_artifact" "learn-packer-ubuntu" {
   bucket_name   = "learn-packer-ubuntu"

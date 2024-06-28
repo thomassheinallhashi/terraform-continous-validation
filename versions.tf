@@ -13,8 +13,6 @@ terraform {
     }
   }
 }    
-    required_version = ">= 0.15"
-
   backend "remote" {
     organization = "34978-tomstestlab"
 

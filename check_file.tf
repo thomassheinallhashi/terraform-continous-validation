@@ -1,5 +1,5 @@
 check "ami_version_check" {
-  data "aws_instance" "ubuntu" {
+  data "aws_instance" "ubuntu1" {
     instance_tags = {
       Name = "ubuntu-123"
     }

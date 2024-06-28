@@ -14,12 +14,3 @@ terraform {
     }
   }
 }    
-  backend "remote" {
-    organization = "34978-tomstestlab"
-
-    workspaces {
-      name = "continous-validation"
-    }
-  }
-
-}

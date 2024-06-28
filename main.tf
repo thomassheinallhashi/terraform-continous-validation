@@ -24,12 +24,12 @@ data "hcp_packer_artifact" "learn-packer-ubuntu2" {
 }
 
 
-resource "aws_instance" "ubuntu1" {
-  ami                         = data.hcp_packer_artifact.learn-packer-ubuntu.external_identifier
+resource "aws_instance" "ubuntu2" {
+  ami                         = data.hcp_packer_artifact.learn-packer-ubuntu2.external_identifier
   instance_type               = var.instance_type
 
   tags = {
-    Name = "ubuntu-123"
+    Name = "ubuntu-234"
   }
 }
 

@@ -7,10 +7,13 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = ">= 3.26.0"
+    hcp = {
+      source  = "hashicorp/hcp"
+      version = "~> 0.93.0"
     }
   }
-
-  required_version = ">= 0.15"
+}    
+    required_version = ">= 0.15"
 
   backend "remote" {
     organization = "34978-tomstestlab"
@@ -20,13 +23,4 @@ terraform {
     }
   }
 
-}
-
-terraform {
-  required_providers {
-    hcp = {
-      source  = "hashicorp/hcp"
-      version = "~> 0.93.0"
-    }
-  }
 }

@@ -1,17 +1,3 @@
-data "hcp_packer_artifact" "learn-packer-ubuntu" {
-  bucket_name   = "learn-packer-ubuntu"
-  channel_name  = "latest"
-  platform      = "aws"
-  region        = "us-east-2"
-}
-
-data "hcp_packer_artifact" "learn-packer-ubuntu2" {
-  bucket_name   = "learn-packer-ubuntu2"
-  channel_name  = "latest"
-  platform      = "aws"
-  region        = "us-east-2"
-}
-
 check "ami_version_check" {
   data "aws_instance" "ubuntu" {
     instance_tags = {

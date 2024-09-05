@@ -22,8 +22,3 @@ variable "secret_key" {
   description = " "
   default = " "
 }
-
-variable "session_token" {
-  description = " "
-  default = " "
-}

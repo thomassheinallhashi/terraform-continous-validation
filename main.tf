@@ -2,15 +2,11 @@ provider "aws" {
     region = var.region
     access_key = var.access_key
     secret_key = var.secret_key
-    token = var.session_token
-    assume_role {
-      role_arn = "arn:aws:iam::420662974268:role/aws_thomas.sheinall_test-admin"
- }
 }
 
 provider "hcp" {
-    client_id = "zyKs4ZUF0VCIgRCgOPYnbeTbY6bbrWcZ" 
-    client_secret = "JkoCqFO4tizXPYDYXH2wdsu4YJ5Wq_kT02zPiwHtZbvGy0bBWg6niO6YjxldHe-W"    
+    client_id = "o9g4FIlMe7TgilGmO4TIZzwFpcd7yXI4" 
+    client_secret = "MdrAb-k7_qCYQmjEffzeZgQpBaMykEk7YGDUXk6hAOpPHRsm0IF2VLy8yMJhLx-x"    
 }
 data "hcp_packer_artifact" "learn-packer-ubuntu" {
   bucket_name   = "learn-packer-ubuntu"

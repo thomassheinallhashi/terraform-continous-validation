@@ -3,6 +3,9 @@ provider "aws" {
     access_key = var.access_key
     secret_key = var.secret_key
     token = var.session_token
+    assume_role {
+      role_arn = "arn:aws:iam::420662974268:role/aws_thomas.sheinall_test-admin"
+ }
 }
 
 provider "hcp" {

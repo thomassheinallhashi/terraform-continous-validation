@@ -24,7 +24,7 @@ data "hcp_packer_artifact" "learn-packer-ubuntudev" {
 
 
 resource "aws_instance" "ubuntu" {
-  ami                         = data.hcp_packer_artifact.learn-packer-ubuntu.external_identifier
+  ami                         = data.hcp_packer_artifact.learn-packer-ubuntudev.external_identifier
   instance_type               = var.instance_type
 
   tags = {

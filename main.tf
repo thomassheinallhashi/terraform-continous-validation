@@ -16,9 +16,9 @@ data "hcp_packer_artifact" "learn-packer-ubuntu" {
   region        = "us-east-2"
 }
 
-data "hcp_packer_artifact" "learn-packer-ubuntu2" {
-  bucket_name   = "learn-packer-ubuntu2"
-  channel_name  = "latest"
+data "hcp_packer_artifact" "learn-packer-ubuntudev" {
+  bucket_name   = "learn-packer-ubuntu"
+  channel_name  = "dev"
   platform      = "aws"
   region        = "us-east-2"
 }

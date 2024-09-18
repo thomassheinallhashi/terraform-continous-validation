@@ -28,7 +28,7 @@ resource "aws_instance" "ubuntu" {
   instance_type               = var.instance_type
 
   tags = {
-    Name = "ubuntu-456"
+    Name = "ubuntu-789"
   }
 }
 
